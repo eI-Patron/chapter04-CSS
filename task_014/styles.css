@@ -1,0 +1,44 @@
+/*1: Установите полужирный шрифт*/
+.task-bold {
+    font-weight: bold;
+}
+
+/*2: Увеличьте размер шрифта этого текста до 20 пикселей.*/
+.task-size {
+    font-size: 20px;
+}
+
+/*3: Сделайте этот текст по центру.*/
+
+.task-center {
+    text-align: center;
+}
+
+/*4: Используйте моноширинный шрифт для этого текста.*/
+.task-monospace {
+    font-family: monospace;
+}
+
+/*5: Установите красный цвет для этого текста.*/
+.task-color {
+    color: red;
+}
+
+/*6: Сделайте этот текст полужирным, размером 18 пикселей, выровненным по правому краю и зеленого цвета.*/
+.task-complex {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: right;
+    color: green;
+}
+
+/*7: Используйте шрифт Times New Roman для этого текста.*/
+.task-times-new-roman {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*8: Увеличьте размер этого текста до 24 пикселей и установи синий цвет.*/
+.task-large-blue {
+    font-size: 24px;
+    color: blue;
+}
