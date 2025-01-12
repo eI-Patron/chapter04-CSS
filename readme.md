@@ -11,3 +11,4 @@
 - task_018 - Позиционирование div
 - task_019 - Котомемемоизация
 - task_026 - transform-translate
+- task_030 - Изменения display
