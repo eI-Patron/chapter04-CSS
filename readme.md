@@ -12,3 +12,4 @@
 - task_019 - Котомемемоизация
 - task_026 - transform-translate
 - task_030 - Изменения display
+- task_035 - Задания по медиа-запросам
