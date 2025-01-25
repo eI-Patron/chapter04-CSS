@@ -15,16 +15,40 @@
         body {
             /* Используется шрифт Montserrat для текста внутри body */
             font-family: 'Montserrat', sans-serif;
+            /*Отображение элементов в строку*/
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+            /* ��вет фона body */
+            background-color: #f5f5f5;
         }
 
         .card {
-            /* Цвет фона карточки */
+            /*Ширина карточки*/
+            width: 300px;
+            /* Высота карточки */
+            height: 300px;
+            /* Внешний отступ карточки */
+            margin: 5px;
+            /* Отступы текста от границ карточки */
+            padding: 5px;
+            /* Значение box-shadow для карточки */
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+            /* Эффект затемнения для карточки при наведении */
             background-color: #fff;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 200px;
         }
 
         .card h2 {
             /* Внутренний отступ для заголовка h2 */
             margin: 5px;
+            /*Выравнивание текста заголовка по центру*/
+            text-align: center;
         }
 
 
@@ -38,7 +62,25 @@
 
         .button {
             /* Цвет фона кнопки */
-            /* background-color: #4CAF50; */
+            background-color: #4CAF50;
+            /* Цвет текста кнопки */
+            color: #fff;
+            /* Размер кнопки */
+            font-size: 16px;
+            /* Выравнивание текста кнопки по центру */
+            text-align: center;
+            /* Высота кнопки */
+            padding: 10px 20px;
+            /* ��раницы кнопки */
+            border: none;
+            /* Значение box-shadow для кнопки */
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+            /* Радиус скругления кнопки */
+            border-radius: 10px;
+            /* Ссылка кнопки */
+            text-decoration: none;
+            /* Эффект подсветки при наведении */
+            transition: background-color 0.3s ease;
         }
 
         .button:hover {
@@ -49,11 +91,15 @@
         ul {
             /* Удаление маркеров списка */
             list-style: none;
+            margin: 0 0 10px 0;
+            padding: 0;
+            text-align: center;
         }
 
         li {
             /* Внешний отступ элементов списка */
             margin: 5px 0;
+            font-family: "Roboto Mono", monospace;
         }
 
         @media (max-width: 768px) {
@@ -101,7 +147,7 @@
         <div class="price">&#8381; 599/месяц</div>
         <a href="#" class="button">Подписаться</a>
     </div>
-    <p><a href="../index.html">&lt&lt Вернуться на главную</a></p>
+
 </body>
 
 </html>
