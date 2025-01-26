@@ -17,13 +17,27 @@
         .item {
             background-color: rgb(159, 142, 121);
             font-size: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        /* .teacher {} */
+        .teacher {
+            order: 1;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
 
-        /* .scientist {} */
+        .scientist {
+            order: 3;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
 
-        /* .programmer {} */
+        .programmer {
+            order: 2;
+            grid-row: span 2;
+        }
     </style>
     <title>grid-placement</title>
 </head>
