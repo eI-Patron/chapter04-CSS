@@ -6,7 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid Layout</title>
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-rows: 100px 1fr 100px;
+            grid-template-columns: 150px 1fr;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
 
+        /* Header and Footer*/
+        .header,
+        .footer {
+            grid-column: span 2;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Aside Panel */
+        .aside {
+            background-color: #555;
+            color: #fff;
+            padding: 10px;
+        }
+
+        /* Main Content */
+        .main {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            padding: 20px;
+        }
+
+        /* Section */
+        /* Add your sections here */
+        .section {
+            background-color: #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .main {
+                grid-template-columns: 1fr;
+                grid-gap: 10px;
+            }
+        }
     </style>
 </head>
 
